@@ -19,3 +19,10 @@ layout: layout/base.njk
 
 <h2>Why do you want a homepage?</h2>
 <p>The web was made for personal homepages, make this one yours</p>
+
+{% set postslist = collections.posts | head(-1) %}
+
+{% for post in postslist | head(-1) %}
+  <h1>{{ post.data.title }}</h1>
+  {{ post.templateContent | safe }}
+{% endfor %}
