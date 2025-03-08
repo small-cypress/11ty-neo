@@ -1,22 +1,21 @@
-‐‐‐
-title: Main Page
+---
+title: Hello World!
 layout: layout/base.njk
-‐‐‐
+---
 
-# Welcome to my website!
+<p>
+  Check out your cool new static site built with
+  <a href="https://11ty.dev">11ty</a> on
+  <a href="https://neocities.org/">Neocities</a>.
+</p>
 
-So many ideas run through my head! Woah!!!
+<p>This homepage template is perfect for:</p>
 
-<strong>Did you know you can mix HTML with Markdown?</strong>
+<ul>
+  <li>Creating your own space on the web</li>
+  <li>Expressing yourself</li>
+  <li>Displaying all the gifs you've collected</li>
+</ul>
 
-**Neat, ain't it?**
-
-Lists?
-- Yeah
-- That's
-- Right
-- Unordered tho.
-  1. No worries!
-  2. Let your creativity grow strong!
-
-## Is that cool?
+<h2>Why do you want a homepage?</h2>
+<p>The web was made for personal homepages, make this one yours</p>
