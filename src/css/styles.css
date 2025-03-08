@@ -40,7 +40,7 @@ html {
 /* Make the body a nice central block */
 body {
   color: var(--text);
-  background: #ffffff);
+  background: #ffffff;
   font-size: 1.15rem;
   line-height: 1.5;
   margin: 0 auto;
@@ -68,7 +68,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
+  background: #ffffff;
   padding-bottom: 2rem;
 }
 
