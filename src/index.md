@@ -9,7 +9,7 @@ layout: layout/base.njk
   <a href="https://neocities.org/">Neocities</a>.
 </p>
 
-<p>This homepage template is perfect for:</p>
+<p>omg</p>
 
 <ul>
   <li>Creating your own space on the web</li>
