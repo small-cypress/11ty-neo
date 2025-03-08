@@ -31,6 +31,20 @@
   box-sizing: border-box;
 }
 
+
+ /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            #container {
+                max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+
+
 html {
   /* Set the font globally */
   font-family: var(--sans-font);
@@ -40,7 +54,7 @@ html {
 /* Make the body a nice central block */
 body {
   color: var(--text);
-  background: var(--bg);
+  background: #DA8259;
   font-size: 1.15rem;
   line-height: 1.5;
   margin: 0 auto;
