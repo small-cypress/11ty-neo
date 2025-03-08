@@ -40,7 +40,7 @@ html {
 /* Make the body a nice central block */
 body {
   color: var(--text);
-  background: var(--bg);
+  background: #ffffff);
   font-size: 1.15rem;
   line-height: 1.5;
   margin: 0 auto;
