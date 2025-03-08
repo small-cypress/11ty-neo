@@ -43,7 +43,6 @@ body {
   background: var(--bg);
   font-size: 1.15rem;
   line-height: 1.5;
-  border: solid;
   margin: 0 auto;
   max-width: 40em;
   padding: 0 1em;
