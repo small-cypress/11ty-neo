@@ -54,7 +54,7 @@ html {
 /* Make the body a nice central block */
 body {
   color: var(--text);
-  background: var(--bg);
+  background: #a6e6db;
   font-size: 1.15rem;
   line-height: 1.5;
 
