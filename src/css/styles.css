@@ -40,7 +40,7 @@ html {
 /* Make the body a nice central block */
 body {
   color: var(--text);
-  background: #ffffff;
+  background: var(--bg);
   font-size: 1.15rem;
   line-height: 1.5;
   margin: 0 auto;
@@ -66,10 +66,9 @@ nav {
   line-height: 2;
   padding: 1rem 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  background: #ffffff;
+  justify-content: right;
+  align-items: right;
+  width: 100%;
   padding-bottom: 2rem;
 }
 
@@ -88,7 +87,7 @@ nav a:last-child {
 }
 
 /* Reduce nav side on mobile */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
   nav a {
     border: none;
     padding: 0;
@@ -125,7 +124,7 @@ h2 {
 }
 
 /* Reduce header size on mobile */
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 750px) {
   h1 {
     font-size: 2.5rem;
   }
