@@ -37,8 +37,8 @@ html,body{
     margin: 0; /* Space from this element (entire page) and others*/
     padding: 0; /*space from content and border*/
     border: solid blue;
-    border-width: thin;
-    background: #0000BB;
+    border-width: thick;
+    background: #00000B;
     overflow:hidden;
     display:block;
     box-sizing: border-box;
@@ -63,13 +63,13 @@ body {
 
 body > header {
   text-align: right;
-  padding: 0 0.5rem 2rem 0.5rem;
+  padding: 0 0.5rem .5rem 0.5rem;
   box-sizing: border-box;
 }
 
 body > header h1 {
   max-width: 100%;
-  margin: 1rem auto;
+  margin: .5rem auto;
 }
 
 /* Format navigation */
@@ -82,7 +82,7 @@ nav {
   justify-content: right;
   align-items: right;
   width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: .5rem;
 }
 
 nav a {
