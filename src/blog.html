@@ -11,10 +11,6 @@ These are all of my amazing blog posts, enjoy!
   </li>
   {% endfor %}
 
-  {% for post in collections.blog | reverse | itemLimit(1) %}
-<h1>{{ post.data.title }}</h1>
-{{ post.content | safe }}
-{% endfor %}
 
 well oh boy
 </ul>
