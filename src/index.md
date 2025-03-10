@@ -4,10 +4,12 @@ layout: layout/base.njk
 ---
 <html>
 
-HI
+HEY HI I'M LEARNING IN PUBLIC lolllll
 <body><div>
+ {% for post in collections.blog | reverse %}
 
-hi
+ <p>will it show</p>
+
 <p>hi</p>
 
 this should have worked tbh
