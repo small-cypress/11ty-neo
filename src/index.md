@@ -1,8 +1,7 @@
-
-title: Hello World!
+---
+title: This Is My Blog
 layout: layout\base.njk
 ---
-
 <p>
   Check out your cool new static site built with
   <a href="https://11ty.dev">11ty</a> on
