@@ -1,5 +1,5 @@
 ---
-title: small cypress
+title: about
 layout: layout\base.njk
 ---
 
