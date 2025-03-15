@@ -36,7 +36,7 @@ html,body{
     height: 100%;
     margin: 0; /* Space from this element (entire page) and others*/
     padding: 0; /*space from content and border*/
-    border: none solid none solid black;
+    border: none;
     border-width: thick;
     background: #00000B;
     overflow:hidden;
