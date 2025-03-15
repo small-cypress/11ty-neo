@@ -11,7 +11,7 @@
   --accent-bg: #f5f7ff;
   --text: #333;
   --text-light: #585858;
-  --border: #d8dae1;
+  --border: #FFFFFF;
   --accent: #0d47a1;
 }
 
@@ -36,9 +36,9 @@ html,body{
     height: 100%;
     margin: 0; /* Space from this element (entire page) and others*/
     padding: 0; /*space from content and border*/
-    border: none;
+    border: solid;
     border-width: thick;
-    background: #00000B;
+    background: #FFFFFF;
     overflow:hidden;
     cursor: url("https://64.media.tumblr.com/6a157f752d20ad400ccef17c41abcd2b/tumblr_inline_my2kutlKAf1r63cto.png"), auto;
     display:block;
