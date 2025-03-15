@@ -8,3 +8,19 @@ layout: layout\base.njk
   <a href="https://11ty.dev">11ty</a> on
   <a href="https://neocities.org/">Neocities</a>.
 </p>
+
+<p>This homepage template is perfect for:</p>
+
+<ul>
+  <li>Creating your own space on the web</li>
+  <li>Expressing yourself</li>
+  <li>Displaying all the gifs you've collected</li>
+</ul>
+
+{% for post in collections.blog | itemLimit(1) %}
+<h1>{{ post.data.title }}</h1>
+{{ post.content }}
+{% endfor %}
+
+<h2>Why do you want a homepage?</h2>
+<p>The web was made for personal homepages, make this one yours</p>
