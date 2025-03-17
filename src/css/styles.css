@@ -50,6 +50,15 @@ html {
   font-family: var(--sans-font);
   scroll-behavior: smooth;
 }
+h1 {
+
+font-family: LYDIAN
+
+}
+@font-face {
+    font-family: 'LYDIAN'; /*a name to be used later*/
+    src: url('https://smallcypress.neocities.org/css/LYDIAN__.TTF'); /*URL to font*/
+}
 
 /* Make the body a nice central block */
 body {
