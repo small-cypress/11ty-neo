@@ -38,7 +38,7 @@ html,body{
     padding: 0; /*space from content and border*/
     border: solid;
     border-width: thick;
-    background: #FFFFFF;
+    background-image: url("https://64.media.tumblr.com/tumblr_mex6pc2gFi1rbvno1.png")
     overflow:hidden;
     cursor: url("https://64.media.tumblr.com/6a157f752d20ad400ccef17c41abcd2b/tumblr_inline_my2kutlKAf1r63cto.png"), auto;
     display:block;
