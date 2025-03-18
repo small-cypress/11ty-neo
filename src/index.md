@@ -6,6 +6,10 @@ layout: layout\base.njk
 <html>
 <head>
 <style>
+  body {
+  background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
+  background-repeat: repeat;
+}
 .container {
   display: grid;
   grid-template-areas:
@@ -31,6 +35,7 @@ layout: layout\base.njk
 .p1 {
   font-family: var(--sans-font);
 }
+
 </style>
 </head>
 <body>
@@ -39,7 +44,7 @@ layout: layout\base.njk
   <div class="content"><h3>howdy</h3><p>
   I'm small cypress and this is my anonymized home on the web. </p>
 <p>I am learning in public and making mistakes!</div>
-  
+
 </div>
 
 </body>
