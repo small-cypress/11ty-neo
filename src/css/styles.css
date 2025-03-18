@@ -41,7 +41,9 @@ html,body{
     padding: 0; /*space from content and border*/
     border: solid;
     border-width: thick;
-
+    background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png")
+    repeat;
+    background-repeat: repeat;
     cursor: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png"), auto;
     display:block;
     box-sizing: border-box;
