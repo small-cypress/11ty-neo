@@ -6,10 +6,6 @@ layout: layout\base.njk
 <html>
 <head>
 <style>
-  body {
-  background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
-  background-repeat: repeat;
-}
 .container {
   display: grid;
   grid-template-areas:
