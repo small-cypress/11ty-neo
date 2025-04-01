@@ -5,23 +5,14 @@ layout: layout\base.njk
 
 <html>
 <head>
-  <style>
-    body {
-  background-image: url("corydora01.gif");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;
-}</style>style>
 <style>
-
-
 .container {
   display: grid;
   grid-template-areas:
     "menu content";
   grid-template-columns: 1fr 3fr;
   gap: 5px;
-  background-color: #aaaaaa;
+  background-color: #a6e6db;
   padding: 3px;
 }
 .container > div {
