@@ -28,9 +28,6 @@ layout: layout\base.njk
 .container > div.content {
   grid-area: content;
 }
-.p1 {
-  font-family: var(--sans-font);
-}
 
 </style>
 </head>
