@@ -8,6 +8,8 @@
 
   /* Default (light) theme */
   --accent-bg: #f5f7ff;
+  --background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
+  background-repeat: repeat;
   --text: #333;
   --text-light: #585858;
   --border: #FFFFFF;
@@ -67,7 +69,7 @@ font-family: LYDIAN
 /* Make the body a nice central block */
 body {
   color: var(--text);
-  background: #a6e6db;
+  background: #aaaaaa;
   font-size: 1.15rem;
   line-height: 1.5;
 

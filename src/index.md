@@ -12,7 +12,7 @@ layout: layout\base.njk
     "menu content";
   grid-template-columns: 1fr 3fr;
   gap: 5px;
-  background-color: #000000;
+  background-color: #a6e6db;
   padding: 3px;
 }
 .container > div {
