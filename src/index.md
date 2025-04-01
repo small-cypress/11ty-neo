@@ -41,6 +41,25 @@ layout: layout\base.njk
   I'm small cypress and this is my anonymized home on the web. </p>
 <p>I am learning in public and making mistakes!</div>
 
+  
+
+<h2>Latest Blog Post</h2>
+<div class="blog-posts-container">
+  <ul>
+  {% assign latest_post = collections.blogPosts | first %}
+  {% if latest_post %}
+    <li>
+      <a href="{{ latest_post.url }}">
+      {{ latest_post.date | date: "%Y-%m-%d" }}: {{ latest_post.data.title }}
+      </a>
+    </li>
+    {% else %}
+    <li>No blog posts yet!</li>
+  {% endif %}
+  </ul>
+</div>
+
+
 </div>
 
 </body>
