@@ -16,7 +16,7 @@ layout: layout\base.njk
   padding: 3px;
 }
 .container > div {
-  background-color: #a6e6db;
+  background-color: #aaaaaa;
   padding: 10px;
 }
 .container > div.menu {
