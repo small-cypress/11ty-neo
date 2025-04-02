@@ -13,7 +13,7 @@
   --accent-bg: #f5f7ff;
   --text: #000000;
   --text-light: #585858;
-  --border: #cdfd67;
+  --border: black;
   --accent: #0d47a1;
 }
 
@@ -37,6 +37,7 @@ html {
   /* Set the font globally */
   font-family: var(--sans-font);
   scroll-behavior: smooth;
+  background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
 }
 
 /* Make the body a nice central block */
