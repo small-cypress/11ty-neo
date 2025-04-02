@@ -9,7 +9,7 @@
 
   /* Default (light) theme */
   --bg: #fff;
-
+  --background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
   --accent-bg: #f5f7ff;
   --text: #cdfd67;
   --text-light: #585858;
@@ -37,31 +37,29 @@ html {
   /* Set the font globally */
   font-family: var(--sans-font);
   scroll-behavior: smooth;
+  background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
 }
 
 /* Make the body a nice central block */
 body {
   color: var(--text);
-  background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
   font-size: 1.15rem;
   line-height: 1.5;
   margin: 0 auto;
   max-width: 40em;
   padding: 0 1em;
-  border: 5px solid red;
+  border: 1px solid black;
 } 
 
 body > header {
   text-align: center;
   padding: 0 0.5rem 2rem 0.5rem;
   box-sizing: border-box;
-  border: 5px solid blue;
 }
 
 body > header h1 {
   max-width: 100%;
   margin: 1rem auto;
-  border: 5px solid yellow;
 }
 
 /* Format navigation */
@@ -75,14 +73,13 @@ nav {
   align-items: center;
   width: 100%;
   padding-bottom: 2rem;
-  border: 5px solid purple;
 }
 
 nav a {
   margin: 1rem 1rem 0 0;
   color: var(--text) !important;
   padding: 0.1rem 1rem;
-  border: 5px solid red;
+  border: 1 px solid black
 }
 
 nav a:hover {
