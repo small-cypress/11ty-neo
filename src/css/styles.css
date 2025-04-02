@@ -89,7 +89,6 @@ nav a:hover {
 
 nav a:last-child {
   margin-right: 0;
-  border: 5px solid red;
 }
 
 /* Reduce nav side on mobile */
