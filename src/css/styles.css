@@ -9,7 +9,6 @@
 
   /* Default (light) theme */
   --bg: #a6e6db;
-  --background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
   --accent-bg: #f5f7ff;
   --text: #000000;
   --text-light: #585858;
@@ -43,7 +42,7 @@ html {
 /* Make the body a nice central block */
 body {
   bg: #a6e6db;
-  color: var(--text);
+  color: #a6e6db;
   font-size: 1.15rem;
   line-height: 1.5;
   margin: 0 auto;
