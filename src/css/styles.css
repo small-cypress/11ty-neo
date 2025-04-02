@@ -8,7 +8,7 @@
 
   /* Default (light) theme */
   --accent-bg: #f5f7ff;
-  --background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
+  --background-image: url("images/tumblr_mex6qqC47X1rbvno1.png");
   background-repeat: repeat;
   --text: #333;
   --text-light: #585858;
@@ -16,7 +16,7 @@
   --accent: #0d47a1;
 }
   body {
-  background-image: url("https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png");
+  background-image: url("images/tumblr_mex6qqC47X1rbvno1.png");
   background-repeat: repeat;
 }
 
