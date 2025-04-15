@@ -46,11 +46,6 @@ href="https://webneko.net">Neko</a></h1>
   I'm small cypress and this is my anonymized home on the web. </p>
 <p>I am learning in public and making mistakes! woosh!</div></p></style>
 
-Trying to get my most recent 11ty blog post to show:<p>
-{% for post in collections.blog | reverse | itemLimit(1) %}
-<h1>{{ post.data.title }}</h1>
-{{ post.content | safe }}
-{% endfor %}
 
 
 </div>
