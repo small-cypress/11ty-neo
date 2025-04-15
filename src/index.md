@@ -6,30 +6,7 @@ layout: layout\base.njk
 <html>
 <head>
 <style>
-.container {
-  display: grid;
-  grid-template-areas:
-    "menu content";
-  grid-template-columns: 1fr 3fr;
-  gap: 5px;
-  background-color: #a6e6db;
-  padding: 3px;
-}
-.container > div {
-  background-color: #a6e6db;
-  padding: 10px;
-}
-.container > div.menu {
-  grid-area: menu;
-  background-color:#ebf9f7;
-  border: double
-  ;
-}
-.container > div.content {
-  grid-area: content;
-}
 
-</style>
 </head>
 <body><style>
 body {
@@ -46,7 +23,8 @@ href="https://webneko.net">Neko</a></h1>
   I'm small cypress and this is my anonymized home on the web. </p>
 <p>I am learning in public and making mistakes! woosh!</div></p></style>
 
-
+<h3>latest blog post:</h3>
+<p>4.15.2025 | <a href="https://smallcypress.bearblog.dev/sobriety-outside-issues-and-hell/">sobriety, outside issues, and hell</a>
 
 </div>
 
