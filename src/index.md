@@ -25,7 +25,11 @@ href="https://webneko.net">Neko</a></h1>
 
 <h3>latest blog post:</h3>
 <p>4.15.2025 | <a href="https://smallcypress.bearblog.dev/sobriety-outside-issues-and-hell/">sobriety, outside issues, and hell</a>
-
+<p><center><p>
+    <a href="https://fediring.net/previous?host=smallcypress.neocities.org">←</a>
+    <a href="https://fediring.net/">Fediring</a>
+    <a href="https://fediring.net/next?host=smallcypress.neocities.org">→</a>
+</p></center>
 </div>
 
 </body>
