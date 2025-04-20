@@ -35,6 +35,11 @@ href="https://webneko.net">Neko</a></h1>
   width:50%;
   padding: 10px;
 }
+.mycontainer {
+  display: grid;
+  grid-template-columns: 66 33%;
+}
+</s
 </style>
 </head>
 <body>
@@ -46,7 +51,7 @@ href="https://webneko.net">Neko</a></h1>
     a test!
   </div>
   
-  <div style="background-color:#d1f6fc;">
+  <div style="background-color:#d1fcf9;">
     <a href="https://cedar-crown-0f4.notion.site/small-cypress-link-bucket-19d9ca30d69c8051b4f8d06e531764c3?pvs=74">link bucket</a><br><a href="https://www.are.na/small-cypress/index">are.na</a><br><a href="https://indieweb.social/@small_cypress">fediverse</a></div>
   <p>
   </div>
