@@ -39,22 +39,16 @@ href="https://webneko.net">Neko</a></h1>
 </head>
 <body>
 
-<h1>Flexbox Example</h1>
-
-<p>Align three DIV elements side by side.</p>
 
 <div class="mycontainer">
 
-  <div style="background-color:#FFF4A3;">
-    <h2>London</h2>
-    <p>London is the capital city of England.</p>
-    <p>London has over 9 million inhabitants.</p>
+  <div style="background-color:#a6e6db;">
+    a test!
   </div>
   
-  <div style="background-color:#FFC0C7;">
-    <h2>Oslo</h2>
-    <p>Oslo is the capital city of Norway.</p>
-    <p>Oslo has over 700,000 inhabitants.</p>
+  <div style="background-color:#d1f6fc;">
+    <a href="https://cedar-crown-0f4.notion.site/small-cypress-link-bucket-19d9ca30d69c8051b4f8d06e531764c3?pvs=74">link bucket</a><br><a href="https://www.are.na/small-cypress/index">are.na</a><br><a href="https://indieweb.social/@small_cypress">fediverse</a></div>
+  <p>
   </div>
   
 
