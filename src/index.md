@@ -52,7 +52,7 @@ href="https://webneko.net">Neko</a></h1>
   </div>
   
   <div style="background-color:#d1fcf9;">
-    <a href="https://cedar-crown-0f4.notion.site/small-cypress-link-bucket-19d9ca30d69c8051b4f8d06e531764c3?pvs=74">link bucket</a><br><a href="https://www.are.na/small-cypress/index">are.na</a><br><a href="https://indieweb.social/@small_cypress">fediverse</a></div>
+    <a href="https://cedar-crown-0f4.notion.site/small-cypress-link-bucket-19d9ca30d69c8051b4f8d06e531764c3?pvs=74">link bucket</a><br><a href="https://www.are.na/small-cypress/index">are.na</a><br><a href="https://indieweb.social/@small_cypress">fediverse</a><br><a href="https://smallcypress.bearblog.dev/feed/?type=rss">RSS for blog</a></div>
   <p>
   </div>
   
