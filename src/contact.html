@@ -32,7 +32,28 @@
                     </div>
                 
                 </aside>
-                <main><div  style="float:right; width: 150px; margin: 10px; border: 1px solid #000000; padding: 10px; background-color: #a3ad00;"><h2>interests:</h2><ul style="padding-left:10px;"><li>planted tanks<li>shepherds<li>art biz</div>
+                <main><div  style="float:right; width: 150px; margin: 10px; border: 1px solid #000000; padding: 10px; background-color: #a3ad00;"><meta name="viewport" content="width=device-width, initial-scale=1"><h2>interests:</h2>
+                    <button type="button" class="collapsible">Open Section 1</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+
+
+
+
+
+
+                </div>
                     
                     <div class="interestbox"><h3>latest blog post:</h3>
 <p>4.15.2025 | <a href="https://smallcypress.bearblog.dev/sobriety-outside-issues-and-hell/">sobriety, outside issues, and hell</a>
@@ -150,6 +171,30 @@ h2 {
                 margin: 0 auto;
                 /* this centers the entire page */
             }
+
+            /*this is the collapsible interests css here*/
+            .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 
             /* the area below is for all links on your page
     EXCEPT for the navigation */
