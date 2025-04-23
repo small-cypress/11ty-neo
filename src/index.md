@@ -1,75 +1,413 @@
----
-title: howdy
-layout: layout\base.njk
----
 
-<html>
+        <div id="container"><div id="header" style="height: 91px;"><h1><center>small cypress</center></h1></div>
+            <div id="headerArea">
+                
+                <nav id="navbar" style="margin-bottom: 10px;">
+                    <ul>
+                        <img src="https://smallcypress.neocities.org/images/corydora05.gif" alt="corydora catfish">
+                        <img src="https://smallcypress.neocities.org/images/corydora02.gif" alt="corydora catfish">
+                        <img src="https://smallcypress.neocities.org/images/corydora07%20(1).gif" alt="Italian Trulli">
+                        <img src="https://smallcypress.neocities.org/images/corydora08.gif" alt="corydora catfish">
+                        <img src="https://smallcypress.neocities.org/images/corydora04%20(1).gif" alt="corydora catfish">
+                        <img src="https://smallcypress.neocities.org/images/corydora01.gif" alt="corydora catfish">
+                        <img src="https://smallcypress.neocities.org/images/corydora09.gif" alt="corydora catfish">
+                        <img src="https://smallcypress.neocities.org/images/corydora03.gif" alt="corydora catfish">
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="flex">
+                <aside id="leftSidebar" style="margin-right: 10px;">
+                    <h2><a href="https://smallcypress.bearblog.dev/blog/">blog</a>
+                       <p><a href="https://indieweb.social/@small_cypress">fediverse</a></p>
+                    <p><a href="https://www.are.na/small-cypress/index">are.na</a></p>
+                    <p><a href="https://cedar-crown-0f4.notion.site/small-cypress-link-bucket-19d9ca30d69c8051b4f8d06e531764c3?pvs=74">link bucket</a></p></h2>
+                    <div class="box">
+                        <p>as of 4.20.25:</p>
+                        <ul style="padding-left:10px;">
+                            <li>Went back to Sadness' layout generator</li>
+                            <li>wrote my first blog post in 20 yrs, hosted on bear blog </li>
+                    
+                        </ul>
+                    </div>
+                
+                </aside>
+                <main><div  style="float:right; width: 300px; margin: 10px; border: 1px solid #000000; padding: 10px; background-color: #a3ad00;"><h2>interests:</h2><html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
-</head>
-<body><style>
-body {
-  font-family: Arial, sans-serif;
-}</style>
-</body>
-<script>NekoType="marmalade"</script>
-<h1 id=nl><script src="https://webneko.net/n20171213.js"></script><a 
-href="https://webneko.net">Neko</a></h1>
-  howdy
-
-<a href="https://cedar-crown-0f4.notion.site/small-cypress-link-bucket-19d9ca30d69c8051b4f8d06e531764c3?pvs=74">link bucket</a><br><a href="https://www.are.na/small-cypress/index">are.na</a><br><a href="https://indieweb.social/@small_cypress">fediverse</a></div>
-  <p>
-  I'm small cypress and this is my anonymized home on the web. </p>
-<p>I am learning in public and making mistakes! </div></p></style>
-
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-.mycontainer {
-  display: flex;
-  padding: 2px;
+.collapsible {
+  background-color: #a3ad00;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 20px;
 }
-.mycontainer > div {
-  width:50%;
-  padding: 10px;
+
+.active, .collapsible:hover {
+  background-color: #a6e6db;
 }
-.mycontainer {
-  display: grid;
-  grid-template-columns: 66 33%;
+
+.content {
+  padding: 0 5px;
+  display: none;
+  overflow: hidden;
+  background-color: #a6e6db;
+  border: 1px solid #000000;
 }
-</s
+
+/* collapsible interest thing*/
 </style>
 </head>
 <body>
 
-
-<div class="mycontainer">
-
-  <div style="background-color:#a6e6db;">
-    a test!
-  </div>
-  
-  <div style="background-color:#d1fcf9;">
-    <a href="https://cedar-crown-0f4.notion.site/small-cypress-link-bucket-19d9ca30d69c8051b4f8d06e531764c3?pvs=74">link bucket</a><br><a href="https://www.are.na/small-cypress/index">are.na</a><br><a href="https://indieweb.social/@small_cypress">fediverse</a><br><a href="https://smallcypress.bearblog.dev/feed/?type=rss">RSS for blog</a></div>
-  <p>
-  </div>
-  
-
-
+<button type="button" class="collapsible">planted tanks</button>
+<div class="content">
+  <p>I'm in the middle of an out-of-state move but I am looking forward to documenting new low-tech tank setups in the new house. I rehomed my platies and rummynose tetras and currently have one plakat betta in a planted 10g and one goldie in a 170g pond (more friends coming once we're settled). I still prefer dirted tanks after finally testing out aquasoils. </p>
+</div>
+<button type="button" class="collapsible">shepherds & dog training</button>
+<div class="content">
+  <p>I have two shepherds and I love dog training for fun and sanity. I had a massive reactive dog as my teacher and a series of great force-free trainers and vet behaviorists. One dog is smart, one dumb. Works in progress.</p>
+</div>
+<button type="button" class="collapsible">art/printmaking</button>
+<div class="content">
+  <p>I make and teach art as my day job. I like to teach (kids, adults, undergrads, meseum docents, everyone) as much as I like to make art. I don't post my art here because it's identifying, but if you get really curious you can ask on the fediverse. </p>
 </div>
 
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </body>
-</html>
-<h3>latest blog post:</h3>
+</html></div>
+                    
+                    <div class="interestbox"><h3>latest blog posts:</h3>
+<p>4.22.2015 | <a href="https://smallcypress.bearblog.dev/anonymity-gender-and-facebook-group-hell/">anonymity, gender, and facebook group hell</a>a>
 <p>4.15.2025 | <a href="https://smallcypress.bearblog.dev/sobriety-outside-issues-and-hell/">sobriety, outside issues, and hell</a>
-<p><center><p>
-    <a href="https://fediring.net/previous?host=smallcypress.neocities.org">←</a>
-    <a href="https://fediring.net/">Fediring</a>
-    <a href="https://fediring.net/next?host=smallcypress.neocities.org">→</a>
-</p></center>
-</div>
+<p><center></div>
 
-</body>
-</html>
+                    
+                    <p>
+</p>
+<div class="interestbox">
+    <a href="https://fediring.net/previous?host=smallcypress.neocities.org"><</a>
+    <a href="https://fediring.net/">Fediring</a>
+    <a href="https://fediring.net/next?host=smallcypress.neocities.org">></a></div>
+</center>
+                </main>
+                
+            </div>
+            
+        </div>
+        <!-- THIS IS THE CSS !-->
+        <style>
+            /* user styles */
+
+            /* styles are what change the color and sizes of stuff on your site. */
+
+            /* these are variables that are being used in the code
+    these tended to confuse some people, so I only kept 
+    the images as variables */
+
+            :root {;
+                --body-bg-image: url('https://smallcypress.neocities.org/images/tumblr_mex6qqC47X1rbvno1.png');
+
+                /* colors */
+                --content: #43256E;
+            }
+
+            /* if you have the URL of a font, you can set it below */
+            /* feel free to delete this if it's not your vibe */
+
+            /* this seems like a lot for just one font and I would have to agree 
+    but I wanted to include an example of how to include a custom font.
+    If you download a font file you can upload it onto your Neocities
+    and then link it! Many fonts have separate files for each style
+    (bold, italic, etc. T_T) which is why there are so many!
+    
+    */
+
+            @font-face {
+                font-family: 'Lydian';
+                src: url('https://smallcypress.neocities.org/css/LYDIAN__.TTF');
+            }
+
+            @font-face {
+                font-family: Lydian;
+                src: url('https://smallcypress.neocities.org/css/LYDIAN__.TTF');
+                font-weight: bold;
+            }
+
+            @font-face {
+                font-family: Lydian;
+                src: url('https://smallcypress.neocities.org/css/LYDIAN__.TTF');
+                font-style: italic;
+            }
+
+            @font-face {
+                font-family: Lydian;
+                src: url('https://smallcypress.neocities.org/css/LYDIAN__.TTF');
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            body {
+                font-family: Verdana, sans-serif;
+                margin: 0;
+                background-color: #08031A;
+                border: 1px solid #000000;
+                /* you can delete the line below if you'd prefer to not use an image */
+                color: #000000;
+                background-image: var(--body-bg-image);
+            }
+
+           h1 {
+  font-family: 'Lydian', serif;
+  font-size: 60px;
+  color: cadetblue;
+}
+h2 {
+  font-family: 'Lydian', serif;
+  font-size: 30px;
+  color: cadetblue;
+}
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* below this line is CSS for the layout */
+
+            /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+
+
+            /* the "container" is what wraps your entire website */
+            /* if you want something (like the header) to be Wider than
+    the other elements, you will need to move that div outside
+    of the container */
+            #container {
+                max-width: 900px;
+                /* this is the width of your layout! */
+                /* if you change the above value, scroll to the bottom
+      and change the media query according to the comment! */
+                margin: 0 auto;
+                /* this centers the entire page */
+            }
+
+            /* the area below is for all links on your page
+    EXCEPT for the navigation */
+            #container a {
+                color: #a3ad00;
+                font-weight: bold;
+                text-decoration: none;
+                -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+                /* if you want to remove the underline
+      you can add a line below here that says:
+      text-decoration:none; */
+            }
+
+            #header {
+                width: 100%;
+                background-color: #a6e6db;
+                /* header color here! */
+                height: 150px;
+                /* this is only for a background image! */
+                /* if you want to put images IN the header, 
+      you can add them directly to the <div id="header"></div> element! */
+                background-image: var(--header-image);
+                background-size: 100%;
+            }
+
+            /* navigation section!! */
+            #navbar {
+                height: 40px;
+                background-color: #;
+                /* navbar color */
+                width: 100%;
+            }
+
+            #navbar ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                justify-content: space-evenly;
+            }
+
+            #navbar li {
+                padding-top: 10px;
+            }
+
+            /* navigation links*/
+            #navbar li a {
+                color: #000000;
+                /* navbar text color */
+                font-weight: 800;
+                text-decoration: none;
+                /* this removes the underline */
+            }
+
+            /* navigation link when a link is hovered over */
+            #navbar li a:hover {
+                color: #a3ad00;
+                text-decoration: underline;
+            }
+
+            #flex {
+                display: flex;
+            }
+
+            /* this colors BOTH sidebars
+    if you want to style them separately,
+    create styles for #leftSidebar and #rightSidebar */
+            aside {
+                background-color: #a6e6db;
+                width: 200px;
+                padding: 20px;
+                font-size: smaller;
+                border: 1px solid #000000;
+                /* this makes the sidebar text slightly smaller */
+            }
+
+
+            /* this is the color of the main content area,
+    between the sidebars! */
+            main {
+                background-color: #f7b738;
+                flex: 1;
+                border: 1px solid #000000;
+                border-color: #000000;
+                padding: 20px;
+                order: 2;
+            }
+
+            /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
+
+            */ #leftSidebar {
+                order: 1;
+            }
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            footer {
+                background-color: #a6e6db;
+                /* background color for footer */
+                width: 100%;
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+                /* this centers the footer text */
+            }
+
+            h1,
+            h2,
+            h3 {
+                color: #000000;
+                font-family: 'Lydian';
+            }
+
+            
+            h1 {
+                font-size: 60px;
+                font-family: 'Lydian';
+            
+                
+            }
+
+            strong {
+                /* this styles bold text */
+                color: #000000;
+            }
+
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: #c3f7ee;
+                border: 1px solid #000000;
+                padding: 10px;
+            }
+
+            .interestbox {
+                background-color: #c3f7ee;
+                border: 1px solid #000000;
+                padding: 10px;
+            }
+
+            /* CSS for extras */
+
+            #topBar {
+                width: 100%;
+                height: 30px;
+                padding: 10px;
+                font-size: smaller;
+                background-color: #13092D;
+            }
+
+
+            /* BELOW THIS POINT IS MEDIA QUERY */
+
+            /* so you wanna change the width of your page? 
+    by default, the container width is 900px.
+    in order to keep things responsive, take your new height,
+    and then subtrack it by 100. use this new number as the 
+    "max-width" value below
+    */
+
+            @media only screen and (max-width: 800px) {
+                #flex {
+                    flex-wrap: wrap;
+                }
+
+                aside {
+                    width: 100%;
+                }
+
+                /* the order of the items is adjusted here for responsiveness!
+      since the sidebars would be too small on a mobile device.
+      feel free to play around with the order!
+      */
+                main {
+                    order: 1;
+                }
+
+                #leftSidebar {
+                    order: 2;
+                }
+
+                #rightSidebar {
+                    order: 3;
+                }
+
+                #navbar ul {
+                    flex-wrap: wrap;
+                }
+            }
+        </style>
+
+    
