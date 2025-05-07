@@ -105,18 +105,7 @@ for (i = 0; i < coll.length; i++) {
 <p>4.15.2025 | <a href="https://smallcypress.bearblog.dev/sobriety-outside-issues-and-hell/">sobriety, outside issues, and hell</a>
 <p><center></div><p></p><p>
 
-<script>
-fetch("https://status.cafe/users/small_cypress/status.json")
-  .then( r => r.json() )
-  .then( r => {
-    if (!r.content.length) {
-      document.getElementById("statuscafe-content").innerHTML = "No status yet."
-      return
-}
-    document.getElementById("statuscafe-username").innerHTML = '<a href="https://status.cafe/users/small_cypress" target="_blank">' + r.author + '</a> ' + r.face + ' ' + r.timeAgo
-    document.getElementById("statuscafe-content").innerHTML = r.content
-  })
-</script>
+<div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=small_cypress" defer></script>
                     
                     <p>I want the web to be a place to wander, and I suppose I need to make some places to wander through. <p> I was a Geocities & Angelfire builder and avid Livejournaler 20+ years ago, and it was fun. Let's have fun again.
                         <p>
@@ -432,6 +421,20 @@ h2 {
                     flex-wrap: wrap;
                 }
             }
+
+            /*status cafe add on */
+
+            #statuscafe {
+    padding: .5em;
+    background-color: azure;
+    border: 1px solid midnightblue;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
         </style>
 
     
