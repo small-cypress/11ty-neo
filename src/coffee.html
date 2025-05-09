@@ -16,7 +16,12 @@
 
                 </main>
                 
-            <aside id="rightSidebar" style="margin-left: 10px;">Updates
+            <aside id="rightSidebar" style="margin-left: 10px;"><ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
             <div class="box">
                 box
             </div></aside>
@@ -90,7 +95,27 @@
             * {
                 box-sizing: border-box;
             }
+/*link navigation bar*/ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
 
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
             /* below this line is CSS for the layout */
             /* #F3DEBA is beige, #3C2A21 is dark, #D7A86E is the middle brown color */
 
