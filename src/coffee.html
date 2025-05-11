@@ -221,7 +221,7 @@ display: flex;
 
 
 
-/*this makes the headers a different font than the paragraph text*/
+/*this makes the headers a different font than the paragraph text*
 
 h1 {
   font-family: 'Courier New', monospace;
@@ -236,11 +236,25 @@ h3 {
   font-size: 25px;
 }
 
-            
-
-          
+            /* what's this "order" stuff about??
+    allow me to explain!
+    if you're using both sidebars, the "order" value
+    tells the CSS the order in which to display them.
+    left sidebar is 1, content is 2, and right sidebar is 3! */
 
            
+
+            #rightSidebar {
+                order: 3;
+            }
+
+            
+
+            h1,
+            h2,
+            h3 {
+                color: #000000;
+            }
 
             h1 {
                 font-size: 25px;
@@ -251,7 +265,12 @@ h3 {
                 color: #000000;
             }
 
-    
+            /* this is just a cool box, it's the darker colored one */
+            .box {
+                background-color: #D7A86E;
+                border: 1px solid #3C2A21;
+                padding: 10px;
+            }
             /* CSS for extras */
 
             #topBar {
