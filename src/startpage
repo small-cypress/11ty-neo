@@ -1,0 +1,95 @@
+<!-- base template by teppyslayouts.neocities.org -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="outer">
+		<div class="title">
+			<div class="site-title">never suitable</div>
+			<div class="site-subtitle">never ever ever ever ever</div>
+		</div>
+		<div class="banner-wrapper">
+			<div class="banner"></div>
+			<div class="scroller">
+				<div class="marquee">
+					<span>
+					2023/08/12: I implore cocaine &middot; 2023/08/12: i'm your dancer i'm your dancer i'm your dancer i'm your dancer &middot;</div>
+				</span>
+			</div>
+		</div>
+		<div class="left">
+			<div class="menu">
+				<a href="01home.html" target="content">home</a>
+				<a href="02blog.html" target="content">blog</a>
+				<a href="03about.html" target="content">about</a>
+				<a href="04links.html" target="content">links</a>
+			</div>
+			<div class="friends">
+				<h2>ONLINE FRIENDS</h2>
+				<div><a href="">&lt;iHealerEx&gt;</a></div>
+				<div><a href="">&lt;TaiiBOII&gt;</a></div>
+				<div><a href="">&lt;Polskiinese&gt;</a></div>
+				<div><a href="">&lt;Vakz&gt;</a></div>
+			</div>
+			<div class="small">
+				<small>kiiiiiiiiiiiimiiiiiiii daaaaaa keeeeeeeeee woooooooooooooooooooooooooooooooooo kimiiiiiiiiiiiii daaaaaaaakewooooooooooooooooooooooo suuuuuuuuukiiiiiiiiiideeeeeeeeeeeeeeeeeeeeeee iiiiiiiiitaaaaaaaaaayoooooooooooooooooo</small>
+			</div>
+		</div>
+		<div class="main">
+			<iframe name="content" src="01home.html" class="content"></iframe>
+		</div>
+		<div class="right">
+			<div class="profile">
+				<div class="avatar"></div>
+				<p>30/M/USA glue</p>
+				<p>just to feel someting i am eating all these potato chips whilke thinking of you</p>
+				<p>oh no oh no</p>
+			</div>
+			<div class="likes">
+				<table border="2" cellspacing="0" cellpadding="6">
+					<tr>
+						<th>food</th>
+						<td>sushi</td>
+					</tr>
+					<tr>
+						<th>music</th>
+						<td>asdasdasd</td>
+					</tr>
+					<tr>
+						<th>game</th>
+						<td>your heart</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function Marquee(selector, speed) {
+			const parentSelector = document.querySelector(selector);
+			const clone = parentSelector.innerHTML;
+			const firstElement = parentSelector.children[0];
+			let i = 0;
+			console.log(firstElement);
+			parentSelector.insertAdjacentHTML('beforeend', clone);
+			parentSelector.insertAdjacentHTML('beforeend', clone);
+
+			setInterval(function () {
+				firstElement.style.marginLeft = `-${i}px`;
+				if (i > firstElement.clientWidth) {
+					i = 0;
+				}
+				i = i + speed;
+			}, 0);
+		}
+
+	//after window is completed load
+	//1 class selector for marquee
+	//2 marquee speed 0.2
+	window.addEventListener('load', Marquee('.marquee', 0.4))
+
+</script>
+</body>
+</html>
