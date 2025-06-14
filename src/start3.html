@@ -1,170 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pomodoro App</title>
-    <script>
-        // Initialize timer variables
-let isRunning = false;
-let isPaused = false;
-let timer;
-let timeLeft = 25 * 60;
-
-// Select DOM elements
-const timerDisplay = document.getElementById('timer');
-const startBtn = document.getElementById('startBtn');
-const pauseBtn = document.getElementById('pauseBtn');
-const resetBtn = document.getElementById('resetBtn');
-
-// Function to format time in mm:ss
-function formatTime(seconds) {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    return `${mins < 10 ? '0' : ''}${mins}:${secs < 10 ? '0' : ''}${secs}`;
-}
-
-// Update the timer display
-function updateTimer() {
-    timerDisplay.textContent = formatTime(timeLeft);
-}
-
-// Function to start the timer
-function startTimer() {
-    timer = setInterval(() => {
-        if (timeLeft > 0) {
-            timeLeft--;
-            updateTimer();
-        } else {
-            clearInterval(timer);
-            isRunning = false;
-            startBtn.textContent = 'Start';
-            pauseBtn.style.display = 'none';
-            alert('Time\'s up!');
-        }
-    }, 1000);
-}
-
-// Event listener for Start button
-startBtn.addEventListener('click', () => {
-    if (!isRunning) {
-        if (isPaused) {
-            isPaused = false;
-            startTimer();
-        } else {
-            timeLeft = 25 * 60;
-            updateTimer();
-            startTimer();
-        }
-        isRunning = true;
-        startBtn.style.display = 'none';
-        pauseBtn.style.display = 'inline-block';
-    }
-});
-
-// Event listener for Pause button
-pauseBtn.addEventListener('click', () => {
-    if (isRunning) {
-        clearInterval(timer);
-        isPaused = true;
-        isRunning = false;
-        startBtn.textContent = 'Resume';
-        startBtn.style.display = 'inline-block';
-        pauseBtn.style.display = 'none';
-    }
-});
-
-// Event listener for Reset button
-resetBtn.addEventListener('click', () => {
-    clearInterval(timer);
-    isRunning = false;
-    isPaused = false;
-    timeLeft = 25 * 60;
-    updateTimer();
-    startBtn.textContent = 'Start';
-    startBtn.style.display = 'inline-block';
-    pauseBtn.style.display = 'none';
-});
-
-// Initial call to set the timer display
-updateTimer();</script>
-</head>
-<body>
-    <div class="pomodoro-container">
-        <h1>Pomodoro Timer</h1>
-        <div class="timer" id="timer">25:00</div>
-        <button id="startBtn">Start</button>
-        <button id="pauseBtn">Pause</button>
-        <button id="resetBtn">Reset</button>
+    <title>h</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="newcss.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class=box>
+    <div class=weirdbox>
+    <div class=box-title>HOMEPAGE TEST</div>
+    <div class=weird>-</div>
+    <div class=weird>☐</div>
+    <div class=weird>X</div>
     </div>
-    </script>
-</body>
+    
+    <div class=side><h3>Content!</h3>
+    <ul><li class=sidecon><a href="main.html">Home</a></li>
+    <li class=sidecon><a href="log.html">Changelog</a></li>
+    <li class=sidecon><a href="testdirectory.html">CSS Test Pages</a></li>
+    <li class=sidecon><a href="/conlangs/index.html">Conlangs</a></li>
+    <li class=sidecon><a href="/filk/index.html">Filk</a></li>
+    <li class=sidecon><a href="/games/index.html">Games</a></li>
+    <li class=sidecon><a href="/jadepages/index.html">The Jade Pages</a></li>
+    <li class=sidecon><a href="coolsites.html">Links</a></li>  
+    </ul>
+    </div>
+    
+    <div class=box-inner>
+    
+    
+    
+    <h1>Welcome to my Website!</h1>
+
+    <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
+
+    <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
+
+    <p>Here's how you can add an image:</p>
+    <img src="/neocities.png">
+
+    <p>Here's how to make a list:</p>
+
+    <ul>
+      <li>First thing</li>
+      <li>Second thing</li>
+      <li>Third thing</li>
+    </ul>
+
+    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+    
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate varius faucibus. Praesent feugiat dolor augue, vel scelerisque erat maximus sed. Aenean a ex quis erat feugiat eleifend eu a justo. Proin aliquet ex lectus. Suspendisse bibendum dictum felis, in tincidunt quam elementum ut. Morbi tristique lectus nisi, ut lacinia risus pharetra id. Quisque in libero ligula.</p>
+
+      <p>Maecenas in metus consequat, feugiat eros vitae, consectetur nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla bibendum risus erat, in fringilla arcu facilisis et. Vivamus laoreet hendrerit augue eu sodales. Etiam condimentum, eros quis tempor finibus, sapien nulla mollis mauris, porttitor luctus magna ex sit amet neque. Nunc pulvinar dui diam, at dignissim felis placerat ut. In hac habitasse platea dictumst. Aenean vitae risus nec purus fringilla fringilla in sit amet libero. Vestibulum velit leo, ornare id mollis ac, accumsan nec turpis. Vestibulum in purus metus. Phasellus mattis porta nulla.</p>
+
+      <p>Vivamus in mauris vehicula, egestas purus non, finibus neque. Sed luctus vestibulum est, vel tristique elit imperdiet in. Pellentesque sed semper dolor. Sed eu massa eget arcu feugiat sollicitudin. Praesent eget dignissim sem. Suspendisse tristique consectetur augue. Nulla ac urna sed sapien aliquam varius. Donec placerat vitae enim sit amet mattis. Suspendisse ut lobortis arcu.</p>
+
+      <p>Integer pulvinar finibus consequat. Curabitur convallis vehicula risus, sit amet porta diam. In hac habitasse platea dictumst. In rhoncus aliquet nisl, tristique tincidunt velit ullamcorper volutpat. Etiam tortor tellus, auctor nec volutpat in, gravida ac metus. Integer nisl lacus, posuere vel felis vitae, commodo aliquam neque. Nunc erat purus, tempor vitae nulla mattis, vestibulum interdum augue. Fusce eget tortor tellus.</p>
+
+<p>Vestibulum malesuada molestie neque, varius mattis velit luctus sit amet. Praesent sed elementum enim. Aliquam non magna ligula. Nam ornare in tortor id pretium. In convallis metus ante, et tempus massa porta ac. Aenean consectetur laoreet orci, a sollicitudin sapien suscipit sed. Morbi semper mauris vel feugiat molestie. Vestibulum nisl nulla, suscipit ut aliquet commodo, sagittis non ligula. Nulla pellentesque magna at arcu iaculis ultrices. </p>
+      
+    
+    </div>
+    <p><small>the ramen is a lie</small></p>
+    </div>
+    
+  </body>
 </html>
-
-<style>body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background: url('https://picsum.photos/1920/1080?random') no-repeat center center fixed;
-    background-size: cover;
-}
-
-/* Container for the app */
-.pomodoro-container {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Timer display styling */
-.timer {
-    font-size: 48px;
-    margin: 20px 0;
-}
-
-/* Button styling */
-button {
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 5px;
-    transition: background 0.3s;
-}
-
-/* Start button styling */
-#startBtn {
-    background: #4CAF50;
-}
-
-#startBtn:hover {
-    background: #45a049;
-}
-
-/* Pause button styling */
-#pauseBtn {
-    background: #ff9800;
-    display: none;
-}
-
-#pauseBtn:hover {
-    background: #e68a00;
-}
-
-/* Reset button styling */
-#resetBtn {
-    background: #f44336;
-}
-
-#resetBtn:hover {
-    background: #da190b;
-}</style>
