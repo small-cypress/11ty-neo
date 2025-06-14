@@ -22,7 +22,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   gap: 8px;
 
   padding: 8px;
-  background-color: #6dc1b2;
+  
 }
 
 .column {
@@ -45,25 +45,25 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .hi { grid-area: hi;
-background-color: #FFFFFF;
+background-color: #6dc1b2;
 border: 2px solid;
   padding: 10px;
   box-shadow: }
 
 
 .photo { grid-area: photo; 
-background-color: #FFFFFF;
+background-color: #6dc1b2;
 border: 2px solid;
   padding: 10px;
   box-shadow: }
 
 
 .thing { grid-area: thing; 
-	background-color: #FFFFFF;
+	background-color: #6dc1b2;
 border: 2px solid;
   padding: 10px;
   box-shadow: }
-
+/* what if I neuter it 
 
 .welcome { grid-area: welcome; 
 background-color: #FFFFFF;
@@ -98,19 +98,18 @@ border: 2px solid;
   padding: 10px;
   }
 
-
 .because { grid-area: because; 
 background-color: #FFFFFF;
 border: 2px solid;
   padding: 10px;
- }
+ } */
 </style>
 
 <html><body>
 <div class="row">
   <div class="column">
 <center>
-<img src="https://media1.tenor.com/m/9XqfLB9F06QAAAAd/aquarium.gif">
+<img src="https://media1.tenor.com/m/9XqfLB9F06QAAAAd/aquarium.gif" style="outline: 2px solid black;">
 	<section class="layout">
   <div class="hi">the basics
   	<p>arena</p><p>notion</p></div>
@@ -132,9 +131,9 @@ border: 2px solid;
   <div class="because">9</div></center>
 </section>
 
-  </div>
-  <div class="column2">
-   <a class="weatherwidget-io" href="https://forecast7.com/en/39d29n76d61/baltimore/?unit=us" data-label_1="charm city" data-label_2="weather" data-font="Monaco" data-days="3" data-theme="original" data-basecolor="#6dc1b2" data-textcolor="#000000" data-highcolor="#000000" data-lowcolor="#000000" data-raincolor="#000000" >charm city weather</a>
+  </div><center>
+  <div class="column2" style="background-color:#6dc1b2;">
+   <a class="weatherwidget-io" href="https://forecast7.com/en/39d29n76d61/baltimore/?unit=us" data-label_1="charm city" data-label_2="weather" data-font="Monaco" data-days="3" data-theme="original" data-basecolor="#6dc1b2" data-textcolor="#000000" data-highcolor="#000000" data-lowcolor="#000000" data-raincolor="#000000" >charm city weather</a></div>center>
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
