@@ -70,3 +70,359 @@
     
   </body>
 </html>
+<style>/***
+
+Eggramen site CSS, version 3: "questerpest beta". Name added retroactively after completion of v5.
+
+Feel free to borrow bits and pieces of code wherever. 
+This isn't very well coded, though; if you're looking for a windowed style, you should probably check v4.
+
+***/
+
+
+body {
+  background: #98e9f4 url(https://eggramen.neocities.org/xamag_skaia_3_optimized.png) no-repeat fixed;
+  background-attachment: fixed;
+  background-position:center;
+  background-size: cover;
+  color: #111123;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-size: 15px;
+  overflow-x: auto; /*this was causing issues*/
+}
+
+/*used on lists, such as the credits page*/
+
+.biglist {
+  font-size: 15px;
+  text-align:left;}
+  
+.smalllist {
+  font-size: 14px;
+  text-align:left;
+  margin-right:10px;}
+
+
+/*used for landing page*/
+
+.message { /*message box*/
+text-align:center;
+margin: 0 0 auto;
+  margin-top: 125px;
+  margin-bottom: 20px;
+  width: 400px;
+  border: 3px #0783b9 solid;
+  border-radius: 5px;
+  text-align: center;
+  background: #aae6ff;
+  border-top: 4px #1894ca solid;
+  }
+  
+.innerbox {
+  /*message contents go in this one*/
+  text-align:center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+  
+.weirdbox { /*big, contains - and x*/
+  text-align: right;
+  font-size:14px;
+  text-decoration:none;
+  }
+  
+.message-title-short { /*box top/header line*/
+  margin-right: -100px;
+  float: left;
+  margin-left: 0px;
+  padding-left: 10px;
+  padding-right: 300px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+  background: #1894ca;
+  text-align: left;
+  color:#ffffff;
+  margin-top: -1px;
+  }
+  
+.message-title-long { /*box top/header line*/
+  
+  margin-right: -100px;
+  float: left;
+  margin-left: 0px;
+  padding-left: 10px;
+  padding-right: 250px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+  background: #1894ca;
+  text-align: left;
+  color:#ffffff;
+  margin-top:-1px;
+  }
+  
+.weird {  /*boxes for - and x*/
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1px;
+  padding-bottom: 5px;
+  background: #1894ca;
+  display: inline-block;
+  margin: -2px;
+  color:#ffffff;
+  }
+  
+.weird a{
+  color:#ffffff;
+  text-decoration:none;}
+
+.normal { /*buttons for message*/
+  margin: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 3px;
+  background: #1894ca;
+  display: inline-block;
+  text-align: center;
+  font-size:14px;
+  color:#ffffff;
+  }
+  
+
+a {
+  color: #045086;
+}
+
+small {
+  font-size: 10px;
+  }
+
+midsmall {
+  font-size: 13px;
+  }
+  
+  .box { /*main*/
+  text-align:left;  
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: 900px;
+  border: 3px #1894ca solid;
+  border-radius: 5px;
+  text-align: center;
+  background: #aae6ff;
+  min-height:650px;
+  border-top:4px #1894ca solid;
+  }
+  
+.box-title { /*box top/header line*/
+  margin-right: -100px;
+  float: left;
+  margin-left: 0px;
+  padding-left: 20px;
+  min-width:840px;
+  padding-top: 1px;
+  padding-bottom: 5px;
+  background: #1894ca;
+  text-align: left;
+  color:#ffffff;
+  margin-top: -1px;
+  }
+  
+  .side{
+    margin:10px;
+    margin-left:25px;
+    width:150px;
+    position:absolute;
+    border: 0px solid #1894ca;
+    text-align: center;
+    padding:5px;
+    margin-top:30px;
+    border-radius:5px;
+    }
+    
+  .box-inner {
+  /*normal*/
+  text-align:left;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-left:200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
+    
+    .footer {
+      padding:10px;
+      padding-top:25px;
+      bottom:5px;
+      text-align:center;
+      }
+  
+  .sidecon { /*sidebar buttons*/
+  background: #1894ca;
+  text-align: left;
+  color:#ffffff;
+    padding:10px;
+    padding-top:7px;
+    padding-bottom:7px;
+    border-radius:5px;
+    list-style-type:none;
+    margin: 0 auto;
+    margin-left:-35px;
+    margin-right:5px;
+    margin-top:15px;
+    margin-bottom:15px;
+    }
+  .sidelist {
+      list-style-type:none;
+    }
+  .sidecon a{
+    color:#ffffff;
+    }
+  
+  .subcon { /*currently unused*/
+    text-align:left;
+    margin-left:-50px;
+    list-style-type:none;
+    font-size:13px;
+    }
+    .subcon a {
+      color:#111123;
+    }
+    
+  .bar {
+    text-align:center;
+    margin-left:-10px;
+    margin-top:25px;
+    margin-bottom:25px;
+    }
+      
+    .ramen {
+      text-align:center;
+      font-size:11px;
+      margin:0 auto;
+      margin-top:-15px;
+      }
+      
+  .shift {
+    margin-left:25px;}
+    
+    .songlist {
+      font-size:14px;
+      margin-left:25px;}
+      
+    .song {
+      margin-left:0px;}
+      
+      
+      .lyrics {
+    font-size:13px;
+    }
+    
+    .shift2 {
+      margin-left:50px;}
+    
+    
+    
+    .word {
+      letter-spacing:0.5px;
+      min-width:160px;
+      font-style:italic;
+      display: inline-block;
+      }
+      
+    .conlang-quote {
+      font-style: italic;
+      font-size: 17px;
+      }        
+      
+      
+        @media(max-width:950px) {
+      .box {
+        font-size:16px;
+        width:700px;
+        }
+      .box-title {
+        min-width:640px;
+        }
+        .bar img {
+          max-width:350px;}
+        .lyrics {
+          font-size:14px;}
+    }
+    
+    @media(max-width:750px) {
+      .box {
+        font-size:17px;
+        width:550px;
+        }
+      .box-title {
+        min-width:490px;
+        }
+      .box-inner {
+        margin-left:140px;
+        }
+        .bar img {
+          max-width:150px;}
+        .side {
+          font-size:15px;
+          width:120px;
+          margin-left:10px;
+          }
+        .lyrics {
+          font-size:15px;
+          }
+        .word {
+          min-width:140px;}
+    }
+    
+    @media(max-width:600px) {
+      .box {
+        min-width:150px;
+        max-width:530px;
+        margin-left:0;
+        margin-right:5px;
+        
+        }
+        .box-inner {
+          margin-left:100px;
+          }
+      .box-title {
+        min-width:85%;}
+        .side {
+          font-size:13px;
+          width:90px;
+          margin-left:1%;
+          margin-right:1%;
+          }
+        .footer {
+          padding-top:-5px;}
+          
+        .word {
+          min-width: 130px;}
+      }
+      
+    @media(orientation: portrait){      
+      body {
+        font-size: 20px
+      }
+      .normal {
+        font-size: 18px;
+        }
+      .box-title {
+        width: 90%;
+        margin-right: 0px;
+        }
+      .box {
+          width: 95%;
+          margin: 0 auto;
+          margin-top: 30px;
+      }
+      .message {
+          width: 85%;
+      }
+      }</style>
