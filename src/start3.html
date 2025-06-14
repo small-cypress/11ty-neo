@@ -1,192 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="time.js"></script>
-  <script src="weather.js"></script>
-  <script src="poem.js"></script>
-  <title>New Tab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro App</title>
+    <script>
+        // Initialize timer variables
+let isRunning = false;
+let isPaused = false;
+let timer;
+let timeLeft = 25 * 60;
+
+// Select DOM elements
+const timerDisplay = document.getElementById('timer');
+const startBtn = document.getElementById('startBtn');
+const pauseBtn = document.getElementById('pauseBtn');
+const resetBtn = document.getElementById('resetBtn');
+
+// Function to format time in mm:ss
+function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins < 10 ? '0' : ''}${mins}:${secs < 10 ? '0' : ''}${secs}`;
+}
+
+// Update the timer display
+function updateTimer() {
+    timerDisplay.textContent = formatTime(timeLeft);
+}
+
+// Function to start the timer
+function startTimer() {
+    timer = setInterval(() => {
+        if (timeLeft > 0) {
+            timeLeft--;
+            updateTimer();
+        } else {
+            clearInterval(timer);
+            isRunning = false;
+            startBtn.textContent = 'Start';
+            pauseBtn.style.display = 'none';
+            alert('Time\'s up!');
+        }
+    }, 1000);
+}
+
+// Event listener for Start button
+startBtn.addEventListener('click', () => {
+    if (!isRunning) {
+        if (isPaused) {
+            isPaused = false;
+            startTimer();
+        } else {
+            timeLeft = 25 * 60;
+            updateTimer();
+            startTimer();
+        }
+        isRunning = true;
+        startBtn.style.display = 'none';
+        pauseBtn.style.display = 'inline-block';
+    }
+});
+
+// Event listener for Pause button
+pauseBtn.addEventListener('click', () => {
+    if (isRunning) {
+        clearInterval(timer);
+        isPaused = true;
+        isRunning = false;
+        startBtn.textContent = 'Resume';
+        startBtn.style.display = 'inline-block';
+        pauseBtn.style.display = 'none';
+    }
+});
+
+// Event listener for Reset button
+resetBtn.addEventListener('click', () => {
+    clearInterval(timer);
+    isRunning = false;
+    isPaused = false;
+    timeLeft = 25 * 60;
+    updateTimer();
+    startBtn.textContent = 'Start';
+    startBtn.style.display = 'inline-block';
+    pauseBtn.style.display = 'none';
+});
+
+// Initial call to set the timer display
+updateTimer();</script>
 </head>
 <body>
-  <!-- Search Bar -->
-  <div class="row">
-    <div class="search underline">
-      <form action="https://duckduckgo.com/" method="get">
-        <input type="text" name="q" placeholder="Search..." />
-      </form>
+    <div class="pomodoro-container">
+        <h1>Pomodoro Timer</h1>
+        <div class="timer" id="timer">25:00</div>
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
     </div>
-  </div>
-
-  <div class="row">
-    <!-- Time and Weather -->
-    <div class="column">
-        <div>
-          <p id="time"></p>
-          <p id="date"></p>
-        </div>
-        <hr>
-        <p id="weather"></p>
-    </div>
-    <!-- Art -->
-    <div class="column">
-      <div id="art" class="box">
-        <pre class="">  
-        _____                   /|
-        |   \      ____        / |
-  __    |    \    /\   |      /  ;
-/\  \  |     \  /  \  |     /  ;
-/,'\  \ |      \/  : \ |    /   ;
-~  ;   \|      /   :  \|   /   ;
-  |    \     /   :'  |   /    ;
-  |     \   /    :   |  /    ;
-  |      \ /    :'   | /     ;
-  |       /     :    |/     ;
-  |      /     :'    |      ;
-    \    /      :     |     ;
-    \  /      :'     |     ;
-      \       :'      |    ;
-      \______:_______|___;
-        </pre>
-      </div>
-    </div>
-    <!-- Links -->
-    <div class="column">
-      <ul>
-        <li><a href="https://www.youtube.com/">YouTube</a></li>
-        <li><a href="https://www.github.com/">GitHub</a></li>
-        <li><a href="https://www.twitter.com/">Twitter</a></li>
-        <li><a href="https://www.mastodon.social/">Mastodon</a></li>
-        <li><a href="https://drive.google.com/drive/#my-drive">Drive</a></li>
-        <li><a href="https://tatsumoto.neocities.org/">日本語</a></li>
-      </ul>
-    </div>
-  </div>
-  <form id="upvote-form" action="/upvote/QzeMnTtFyQvvWnifhUEE/" method="post" style="display: inline">
-    <small>
-        <input hidden name="uid" value="QzeMnTtFyQvvWnifhUEE" style="display:none">
-        <input hidden name="title" style="display:none">
-        <input type="hidden" name="csrfmiddlewaretoken" value="SdMJnzsP3BPCQGl5LLVIVyEENrWgVQjcsCw1v7zgTJrBvXrV4Trx1Y85ejmXQTmh">
-        
-        <button
-            class="upvote-button"
-            title="Toast this post"
-        >
-        
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                <polyline points="17 11 12 6 7 11"></polyline>
-                <polyline points="17 18 12 13 7 18"></polyline>
-            </svg>
-            <small class="upvote-count">1</small>
-        </button>
-    </small>        
-</form>
-
-<script>
-    document.querySelector('#upvote-form').addEventListener('submit', (e) => {
-        e.preventDefault();
-        const form = e.target;
-        fetch(form.action, {
-            method: form.method,
-            body: new FormData(form),
-        });
-        const button = form.querySelector('button')
-        button.disabled = true
-        button.style.color = "salmon"
-        const upvoteCount = document.querySelector('.upvote-count')
-        upvoteCount.innerHTML = `${(parseInt(upvoteCount.innerHTML.split(" ")[0]) + 1)}`
-    });
-</script>
-
-  <!-- Quote Section -->
-  <div class="row">
-    <div id="poem" class="row"></div>
-    <div id="author" class="row"></div>
-  </div>
+    <script src="script.js"></script>
 </body>
 </html>
-<style>/* Base */
 
-* {
-  color: whitesmoke;
-  font-size: 24px;
-  font-family: monospace;
-  background-color: #201F22;
+<style>body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url('https://picsum.photos/1920/1080?random') no-repeat center center fixed;
+    background-size: cover;
 }
 
-body {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0 25% 0;
+/* Container for the app */
+.pomodoro-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
 }
 
-input {
-  border: none;
-} :focus {
-  outline: none;
+/* Timer display styling */
+.timer {
+    font-size: 48px;
+    margin: 20px 0;
 }
 
-ul {
-  list-style: square;
+/* Button styling */
+button {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s;
 }
 
-a {
-  color: whitesmoke;
+/* Start button styling */
+#startBtn {
+    background: #4CAF50;
 }
 
-a:hover {
-  color: antiquewhite;
+#startBtn:hover {
+    background: #45a049;
 }
 
-/* Grid */
-
-.row {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 10px 0;
-}
-    
-.column {
-  flex: 1;
-  padding: 10px;
+/* Pause button styling */
+#pauseBtn {
+    background: #ff9800;
+    display: none;
 }
 
-/* Dividers */
-
-.box {
-  border: 2px solid whitesmoke;
+#pauseBtn:hover {
+    background: #e68a00;
 }
 
-.underline {
-  border-bottom: 2px solid whitesmoke;
+/* Reset button styling */
+#resetBtn {
+    background: #f44336;
 }
 
-/* Misc */
-
-#art {
-  height: 100%;
-  width: auto;
-}
-
-#weather {
-  min-height: 120px;
-}
-
-#poem, #author {
-  display: flex;
-  margin: 0 auto;
-  min-height: 50px;
-  text-align: center;
-  justify-content: center;
-}
-
-.search {
-  width: 100%;
-  margin: 0 10px;
+#resetBtn:hover {
+    background: #da190b;
 }</style>
