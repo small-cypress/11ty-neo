@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<html lang="en-US">
+  <head>
+  <link rel="icon" type="image/x-icon" href="milkcarton.gif"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>milk crate</title>
+    <link href="milkcratelayout.css" rel="stylesheet" type="text/css" media="all">
+<link rel="preconnect" href="fonts.upset.dev">
+<link href="https://fonts.upset.dev/css2?family=Bagel+Fat+One&family=Baloo+Paaji+2:wght@400..800&display=swap" rel="stylesheet">
+  </head>
+  <style>/* change the colors here! */
+:root {
+    --bgcolor: #e8c4c4;
+    --lightcolor: #fef7dd;
+    --popcolor: #ebc061;
+    --darkcolor: #56263e;
+    --darkestcolor: #361626;
+}
+
+/* the rest of the layout vv */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bgcolor);
+    color: var(--darkestcolor);
+    font-family: "Baloo Paaji 2", "Atkinson Hyperlegible", Verdana, sans-serif;
+    z-index: 1;
+}
+
+::selection {
+    background-color: var(--popcolor)
+}
+
+h1 {
+    color: var(--lightcolor);
+    font-family: "Bagel Fat One", "Arial Black", sans-serif;
+    font-size: 50pt;
+    font-weight: normal;
+    text-shadow: 2px 2px var(--darkcolor);
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: -25px;
+    position: relative;
+    z-index: 4;
+}
+
+a {
+    color: var(--darkestcolor);
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: dotted underline 1px;
+    text-shadow: var(--bgcolor) 1px 1px;
+}
+
+a:hover {
+    color: var(--popcolor)
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: var(--darkcolor) 2px solid;
+    background-color: var(--lightcolor);
+    box-shadow: var(--bgcolor) 3px 3px;
+    border-radius: 3px;
+    font-family: inherit;
+    font-weight:bold;
+    font-size: 14pt;
+    color: inherit;
+}
+
+button:active {
+    box-shadow: none;
+    border-color: var(--darkestcolor)
+}
+
+button:hover,
+button:focus {
+    border-color: var(--popcolor)
+}
+
+.box {
+    border: var(--darkcolor) 6px solid;
+    border-radius: 6px;
+    width: 600px;
+    max-width: 100%;
+    height: 450px;
+    margin: auto;
+    position: relative;
+}
+
+.innerbox {
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightcolor);
+    overflow: auto;
+    line-height: 1.2;
+    position: relative;
+    z-index: 3;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--popcolor) var(--lightcolor);
+}
+
+
+
+.sidebox {
+    position: absolute;
+    height: 200px;
+    right: -25px;
+    top: 80px;
+    width: 150px;
+    line-height: 1.3;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: var(--darkcolor);
+    color: var(--lightcolor);
+    text-align: center;
+    z-index: 1;
+    transition: 0.5s;
+    padding-right: 25px;
+    box-shadow: 5px 0px 5px inset var(--darkestcolor);
+    border-left: 6px solid var(--darkcolor);
+    overflow: hidden;
+}
+
+.sidebox p {
+    position: absolute;
+    background-color: var(--darkcolor);
+    z-index: -1;
+    transform: rotate(270deg);
+    right: -23px;
+    top: 45%;
+    margin: 0;
+    line-height: 0.8;
+}
+
+.sidebox ul {
+    list-style-type: none;
+    padding: 0;
+    height: 190px;
+    margin: 5px;
+    margin-left: -5px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--popcolor) var(--lightcolor);
+    overflow: auto;
+}
+
+.sidebox li {
+    margin: 5px;
+}
+
+.sidebox a {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: var(--popcolor);
+    text-shadow: none;
+}
+
+.sidebox a:hover {
+    background-color: var(--popcolor);
+    color: var(--darkestcolor)
+}
+
+.sidebox:hover,
+.sidebox:focus {
+    position: absolute;
+    right: -150px;
+}
+
+.leftcorner {
+    position: absolute;
+    bottom: -75px;
+    left: -75px;
+    max-height: 150px;
+    z-index: 5;
+}
+
+.rightcorner {
+    position: absolute;
+    bottom: -75px;
+    right: -75px;
+    max-height: 150px;
+    z-index: 5;
+}
+
+/* modifications for smaller screens - most notably changing the navigation tab's location and appearance so it moves to the bottom of the box. */
+
+@media only screen and (max-width: 889px) {
+    .sidebox {
+        top: unset;
+        right: 75px;
+        bottom: -23px;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 20px;
+        border-left: none;
+        border-top: 6px var(--darkcolor) solid;
+        box-shadow: 0px 5px 5px inset var(--darkestcolor);
+        padding: unset;
+
+    }
+
+    .sidebox p {
+        transform: unset;
+        bottom: 5px;
+        top: unset;
+        right: unset;
+        left: 26%;
+    }
+
+    .sidebox:hover,
+    .sidebox:focus {
+        right: 75px;
+        bottom: -200px;
+    }
+
+    .sidebox ul {
+        height: 160px;
+        margin: 5px;
+        margin-left: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+    .leftcorner {
+        display: none;
+    }
+
+    .rightcorner {
+        display: none;
+    }
+
+}
+
+/* temporary fix for mobile; this makes the nav menu always-expanded on mobile, because it was broken in safari on iphones. working on another option. stay tuned. */
+
+@media only screen and (max-width: 500px) {
+.sidebox {top:440px;
+right:0;}
+.sidebox:hover, .sidebox:focus {top:440px;
+right:0;}
+}
+
+} 
+</style>
+  <body> 
+
+<!--the h1 is styled to sliiiightly overlap the box!-->
+<h1>milk crate</h1>
+
+
+<!--this box is a container; it's underneath the actual contents of the site, and it's here so things can be absolute positioned relative to it.-->
+<div class="box">
+
+
+<!--this is the inside of the box, where you should put your site contents!-->
+<div class="innerbox">
+
+<p>milk crate is a layout that puts your website in a small centered box! it gives you a big canvas for decoration outside of the box. this layout has an informal and personal feeling to it i think!</p>
+
+<h2>heading 2</h2>
+<ul>
+<li>This is a list.</li>
+<li>Some ideas for pages on your web site:</li>
+<ul>
+<li>display some of your favorite pictures you have on your computer</li>
+<li>share your bookmarked sites</li>
+<li>write down instructions for how to do something you're pretty good at doing</li>
+</ul>
+<li>Or nothing at all. Do what you want.</li>
+</ul> 
+
+<p><b>This is bolded.</b> <i>This is italicized.</i> <u>This is underlined.</u> <a href="http://www.neocities.org">This is a link.</a></p>
+
+<button>This is a button.</button>
+
+</div>
+<!--end of site contents box!-->
+
+
+<!--these two images are in the left corner and right corner - you can use either or both! this demo is using the right corner and not the left corner.-->
+
+    <!-- <img src="https://i.postimg.cc/XYkDqrLN/milkcrate2.png" class="leftcorner"> -->
+    <img src="https://i.postimg.cc/XYkDqrLN/milkcrate2.png" class="rightcorner">
+
+
+<!--this is the navigation tab! you can put as many links in it as you want by adding to the list. the box can scroll if it's a long list.-->
+<div class="sidebox">
+<p>navigation</p>
+<ul>
+<li><a href="">link</a></li>
+<li><a href="">link</a></li>
+<li><a href="">link</a></li>
+<li><a href="">link</a></li>
+<li><a href="">link</a></li>
+<li><a href="">link</a></li>
+</ul>
+</div>
+<!--end of navigation tab-->
+
+
+</div>
+<!--end of container box!-->
+</body>
+</html>
+
+
