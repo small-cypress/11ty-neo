@@ -1,0 +1,288 @@
+
+
+<style>:root{
+    --stroke:#18291D;
+}
+
+body{
+    margin:0;
+    font-family:'retrocompute';
+}
+
+.sticker{
+    position:absolute;
+}
+
+#maple{
+    top:0;
+    right:0;
+}
+
+
+#key{
+    position:absolute;
+    top:0;
+    right:20%;
+}
+
+a{
+    color:lightcoral;
+}
+
+li{
+    list-style-type: none;
+    width:80%;
+}
+
+
+.plants{
+    position:absolute;
+    pointer-events: none;
+    width:20%;
+    bottom:0;
+    right:0;
+}
+
+
+
+.unfinished, .abandoned, .wip, .completed, .changing, .outsourced{
+    padding-left: 4px;
+    border-left:3px solid;
+}
+
+.unfinished{
+    border-color:tomato;
+}
+
+.abandoned{
+    border-color:seagreen;
+}
+
+.wip{
+    border-color:olive;
+}
+
+.complete{
+    border-color:teal;
+}
+
+.changing{
+    border-color:cornflowerblue;
+}
+
+.outsourced{
+    border-color:wheat;
+}
+
+ul{
+    padding:1%;
+}
+
+details{
+    margin-top:2%;
+    width:40%;
+   position:relative;
+}
+
+
+summary, article{
+    background:antiquewhite;
+    padding:1%;
+}
+
+summary{
+    border:1px solid black;
+}
+
+article{
+    position:relative;
+    margin-top:2%;
+    border:1px solid black;
+}
+
+main{
+    width:100vw;
+    height:100vh;
+    display:flex;
+}
+
+aside{
+    background:url(truck.png);
+    background-size:cover;
+    width:40%;
+}
+
+section{
+    background:url(windowbg.png);
+    width:60%;
+    padding:2%;
+    border-left:1px solid black;
+    box-sizing: border-box;
+    background-size:cover;
+    overflow-y:scroll;
+    background-position:fixed;
+    position:relative;
+}
+
+section p{
+    width:40%;
+}
+
+header{
+    font-family:'omori';
+    font-size:3rem;
+    color:#809E0C;
+    text-shadow: -2px -2px 0 var(--stroke), 2px -2px 0 var(--stroke), -2px 2px 0 var(--stroke), 2px 2px 0 var(--stroke);
+}
+
+header h1{
+    margin:0;
+}
+
+@font-face {
+    font-family: 'omori';
+    src: url(OMORI_GAME2.ttf);
+}
+
+@font-face {
+    font-family: 'retrocompute';
+    src: url(Retrocompute.ttf);
+}</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="garden.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" href="bird.png" type="image/x-icon" />
+    <title>garden</title>
+</head>
+<body>
+    <main>
+        <aside></aside>
+        <section>
+            <header><h1>🪴garden🪴</h1></header>
+            <p>dude, i grabbed a mystery pack of seeds from the local farmer's market and when i emptied the contents into a trough planter, they sprouted into wild shapes and colors. check it out - last updated oct 9 2024</p>
+
+            <img src="maple.png" id="maple" class="sticker">
+
+            <ul id="key">
+            <h2>key</h2>
+            <li class="unfinished">unfinished</li> 
+            <li class="wip">wip</li> 
+            <li class="completed">completed</li> 
+            <li class="changing">changing</li> 
+            <li class="abandoned">abandoned</li> 
+            <li class="outsourced">outsourced</li> 
+            </ul>
+
+
+            <details>
+            <summary><img src="tinyplant.gif"> art meta <img src="new.png">
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="outsourced"><a href="https://www.youtube.com/watch?v=6oqO3FXSecM&t=1s&pp=ygUbamFjb2IgZ2VsbGVyIGFydCBmb3Igbm8gb25l">art for no one - jacob geller</a></li>
+                <li class="changing"><a href="https://www.youtube.com/watch?v=6oqO3FXSecM&t=1s&pp=ygUbamFjb2IgZ2VsbGVyIGFydCBmb3Igbm8gb25l">art for no one - my blogpost</a></li>
+                <li class="completed"><a href="/dearartistsofthepast">dear artists of the past</a></li>
+            </ul>
+            <img src="radio.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant2.gif"> ephemera
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="wip"><a href="">when things disappear</a></li>
+            </ul>
+            <img src="piano.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant.gif"> magic
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="outsourced"><a href="https://tool-shed.org/magic/">magic - a working definition</a></li>
+                sigils making:
+                <li class="outsourced"><a href="https://sigilscribe.me/">sigilscribe.me</a></li>
+                <li class="outsourced"><a href="https://www.sigilengine.com/">sigilengine.com</a></li>
+            </ul>
+            <img src="planter.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant2.gif"> cybermancy
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="outsourced"><a href="https://www.vice.com/en/article/conjuring-the-internet-art-and-contemporary-magic/">conjuring the internet: art and contemporary magic</a></li>
+                <li class="outsourced"><a href="https://sacred.display.cz/prayer">what if technology were a prayer?</a></li>
+            </ul>
+            <img src="skull2.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant.gif"> tech
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="wip"><a href="toolsthatwork.php">tools that work</a></li>
+            </ul>
+            <img src="tape.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant2.gif"> music
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+            <li class="wip">nothing yet</li>
+            </ul>
+            <img src="box.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant.gif"> nature
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="wip">nothing yet</li>
+            </ul>
+            <img src="cup.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant2.gif"> the self
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="wip"><a href="unhealthyhabits.php">unhealthy habits</a></li>
+            </ul>
+            <img src="shell.png" class="plants">
+            </article>
+            </details>
+            
+        </section>
+
+
+    </main>
+</body>
+</html>
