@@ -1,5 +1,6 @@
 
 
+
 <style>:root{
     --stroke:#18291D;
 }
@@ -144,6 +145,53 @@ header h1{
 @font-face {
     font-family: 'retrocompute';
     src: url(Retrocompute.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+ 
+}
+
+.right {
+  width: 30%;
+}
+
+.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.box {
+                background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230c3c25' fill-opacity='1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                border: 1px solid #008aa1;
+                padding: 10px;
+.button {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #9fc2b2;
+  border: solid 1px;
+  border-color: #000000;
+  border-radius: 2px;
+  box-shadow: 1px 3px #115233;
+  width: 130px;
 }</style>
 
 <!DOCTYPE html>
@@ -157,8 +205,132 @@ header h1{
 </head>
 <body>
     <main>
-        <aside>ding ding ding </aside>
-        <section><div style="background-color:#92cd00">
+        <aside></aside>
+
+        <section>
+
+<div class="row">
+
+  </div>
+  <div class="column middle" style="background-color:#bbb;">
+    <details>
+            <summary><img src="tinyplant.gif"> art meta <img src="new.png">
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="outsourced"><a href="https://www.youtube.com/watch?v=6oqO3FXSecM&t=1s&pp=ygUbamFjb2IgZ2VsbGVyIGFydCBmb3Igbm8gb25l">art for no one - jacob geller</a></li>
+                <li class="changing"><a href="https://www.youtube.com/watch?v=6oqO3FXSecM&t=1s&pp=ygUbamFjb2IgZ2VsbGVyIGFydCBmb3Igbm8gb25l">art for no one - my blogpost</a></li>
+                <li class="completed"><a href="/dearartistsofthepast">dear artists of the past</a></li>
+            </ul>
+            <img src="radio.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant2.gif"> ephemera
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="wip"><a href="">when things disappear</a></li>
+            </ul>
+            <img src="piano.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant.gif"> magic
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="outsourced"><a href="https://tool-shed.org/magic/">magic - a working definition</a></li>
+                sigils making:
+                <li class="outsourced"><a href="https://sigilscribe.me/">sigilscribe.me</a></li>
+                <li class="outsourced"><a href="https://www.sigilengine.com/">sigilengine.com</a></li>
+            </ul>
+            <img src="planter.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant2.gif"> cybermancy
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="outsourced"><a href="https://www.vice.com/en/article/conjuring-the-internet-art-and-contemporary-magic/">conjuring the internet: art and contemporary magic</a></li>
+                <li class="outsourced"><a href="https://sacred.display.cz/prayer">what if technology were a prayer?</a></li>
+            </ul>
+            <img src="skull2.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant.gif"> tech
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="wip"><a href="toolsthatwork.php">tools that work</a></li>
+            </ul>
+            <img src="tape.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant2.gif"> music
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+            <li class="wip">nothing yet</li>
+            </ul>
+            <img src="box.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant.gif"> nature
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="wip">nothing yet</li>
+            </ul>
+            <img src="cup.png" class="plants">
+            </article>
+            </details>
+
+            <details>
+            <summary><img src="tinyplant2.gif"> the self
+            </summary>
+            <article>
+            <p></p>
+            <ul>
+                <li class="wip"><a href="unhealthyhabits.php">unhealthy habits</a></li>
+            </ul>
+            <img src="shell.png" class="plants">
+            </article>
+            </details>
+  </div>
+  <div class="column right" style="background-color:#ccc;">
+<div class="box"><center>
+                </ul>
+                <button class="button"><a href="https://baltshowplace.tumblr.com/">shows</a></button>
+                <p><button class="button"><a href="https://www.chiark.greenend.org.uk/~sgtatham/puzzles/">games</a></button>
+                    <p><button class="button"><a href="https://www.jetpunk.com/quizzes/map-quiz-europe">geography</a></button>
+                         <p><button class="button"><a href="https://www.are.na/">are.na</a></button>
+                    <p><button class="button"><a href="https://www.notion.so/fe1603c4db684f0eb285c0b026743be8?v=2d29291bee9c40969a1c801e25b0a31a">recipes</a></button>
+                         <p><button class="button"><a href="https://bearblog.dev/smallcypress/dashboard/posts/new/">write!</a></button>
+                    <p><button class="button"><a href="https://ribo.zone/links">rabbithole</a></button></center>
+            </div>
+  </div>
+</div>
+  </div>
+  
+</div><div style="background-color:#92cd00">
             <header><h1>🪴garden🪴</h1></header>
             <p>dude, i grabbed a mystery pack of seeds from the local farmer's market and when i emptied the contents into a trough planter, they sprouted into wild shapes and colors. check it out - last updated oct 9 2024</p></div>
 
