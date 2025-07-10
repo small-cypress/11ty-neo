@@ -155,7 +155,7 @@ h2 { font-size: 2em;
 }
 
 blockquote {
-	background-image:url(https://smallcypress.neocities.org/images/cemeteries/subtle-grunge-texture5.jpg);
+	background-image:url("https://smallcypress.neocities.org/images/cemeteries/Subtle-Grunge-Texture-5.jpg");
 	color: var(--fill);
 	padding: 1em;
 }
@@ -163,6 +163,53 @@ blockquote {
 blockquote a, blockquote code {
 	color: var(--text);
 }
+/* hover image code*/
+
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.gates {
+	border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAALtJREFUOE+9VVsOwCAI0/sfeotOSOlAjSPzZ8RIKa+ullKu8pw6bPmO6+Xn5YcXzbsFQNBmR0feol+30QkB5V6yiICZZfdjVh5TDrZ600HleEwlNWY69YtqimDcOK/mhr3X6dTuczel5rPu4xtlG80ml8UD5oZp472RwDFazakEMzirLdoFNeC/Mk2vKc/ocfczVEqDR7t/ulFbKvVp96P0o+mYqttMbXa0lIXd6CmKsmdHa8oZak3T/1E3woR6BRBlLbAAAAAASUVORK5CYII=') 7 /  7px / 0 round;
+    border-width:  7px;
+    border-style:  solid; 
+    display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*end this section*/
 
 cite { 
 	display: block;
@@ -320,7 +367,16 @@ footer a { color: var(--text); }
 <div class="flex-box"> <!-- Columns go in the flex-box -->
 
 	<section class="half"><p><img src="https://smallcypress.neocities.org/images/grave1.png"><img src="https://smallcypress.neocities.org/images/grave3.png"><img src="https://smallcypress.neocities.org/images/grave2.png"></p></p></section>
-	<section class="half"><p>grave pix go here</p></section>
+	<section class="half"><p>
+
+<div class="container2">
+  <img src="img_avatar.png" alt="Avatar" class="gates">
+  <div class="overlay">
+    <div class="text2">Hello World</div>
+  </div>
+</div>
+
+	</p></section>
 	<section class="third"><p>grave pix go here</p></section>
 	<section class="twothird"><p>grave pix go here</p></section>
 	<section class="twothird"><p>graves!!!</p></section>
