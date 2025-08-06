@@ -472,4 +472,29 @@ h3 {
 
     
   </body>
-</html>
+</html><script>$( window ).on( "load", function() {
+
+    $('.madeby-grid__item').each(function() {
+
+        var item = $(this);
+
+        var width = item.find('.madeby-grid__image img').outerWidth();
+        var height = item.find('.madeby-grid__image img').outerHeight();
+
+        if( width > height ) {
+
+            item.addClass('landscape');
+
+        } else if( height > width ) {
+
+            item.addClass('portrait');
+
+        } else {
+
+            item.addClass('square');
+
+        }
+
+    });
+    
+});</script>
