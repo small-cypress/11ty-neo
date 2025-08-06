@@ -1,0 +1,175 @@
+<html><div class='content-container'>
+
+    <div class='madeby-grid'>
+
+        <div class='madeby-grid__item'>
+
+            <div class="madeby-grid__image">
+                <img src="https://source.unsplash.com/random/1600x900" alt="">
+            </div>
+
+            <div class="madeby-grid__content">
+                <h3>Your Name</h3>
+                <p>Product: Defender Extreme<br>
+                Customer Name: Company Name<br>
+                Installed for: Cineword, Middlesbrough</p>
+            </div>
+            
+        </div>
+
+        <div class='madeby-grid__item'>
+
+            <div class="madeby-grid__image">
+                <img src="https://source.unsplash.com/random/900x900" alt="">
+            </div>
+
+            <div class="madeby-grid__content">
+                <h3>Your Name</h3>
+                <p>Product: Defender Extreme<br>
+                Customer Name: Company Name<br>
+                Installed for: Cineword, Middlesbrough</p>
+            </div>
+
+        </div>
+
+        <div class='madeby-grid__item'>
+
+            <div class="madeby-grid__image">
+                <img src="https://source.unsplash.com/random/900x1600" alt="">
+            </div>
+
+            <div class="madeby-grid__content">
+                <h3>Your Name</h3>
+                <p>Product: Defender Extreme<br>
+                Customer Name: Company Name<br>
+                Installed for: Cineword, Middlesbrough</p>
+            </div>
+
+        </div>
+
+        <div class='madeby-grid__item'>
+
+            <div class="madeby-grid__image">
+                <img src="https://source.unsplash.com/random/1601x901" alt="">
+            </div>
+
+            <div class="madeby-grid__content">
+                <h3>Your Name</h3>
+                <p>Product: Defender Extreme<br>
+                Customer Name: Company Name<br>
+                Installed for: Cineword, Middlesbrough</p>
+            </div>
+            
+        </div>
+
+        <div class='madeby-grid__item'>
+
+            <div class="madeby-grid__image">
+                <img src="https://source.unsplash.com/random/901x1601" alt="">
+            </div>
+
+            <div class="madeby-grid__content">
+                <h3>Your Name</h3>
+                <p>Product: Defender Extreme<br>
+                Customer Name: Company Name<br>
+                Installed for: Cineword, Middlesbrough</p>
+            </div>
+
+        </div>
+
+        <div class='madeby-grid__item'>
+
+            <div class="madeby-grid__image">
+                <img src="https://source.unsplash.com/random/901x901" alt="">
+            </div>
+
+            <div class="madeby-grid__content">
+                <h3>Your Name</h3>
+                <p>Product: Defender Extreme<br>
+                Customer Name: Company Name<br>
+                Installed for: Cineword, Middlesbrough</p>
+            </div>
+
+        </div>
+
+        <div class='madeby-grid__item'>
+
+            <div class="madeby-grid__image">
+                <img src="https://source.unsplash.com/random/1602x902" alt="">
+            </div>
+
+            <div class="madeby-grid__content">
+                <h3>Your Name</h3>
+                <p>Product: Defender Extreme<br>
+                Customer Name: Company Name<br>
+                Installed for: Cineword, Middlesbrough</p>
+            </div>
+            
+        </div>
+
+        
+
+    </div>
+
+</div></html>
+
+<style>
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1.618rem;
+}
+
+.content-container {
+    text-align: center;
+}
+
+.madeby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-auto-flow: dense;
+    grid-gap: 1.618rem;
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+.madeby-grid__item {
+    padding: 1.618rem;
+    border: 1px solid;
+    min-height: calc(1.618rem * 5);
+    grid-row-end: span 3;
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
+    &.landscape {
+        grid-row-end: span 3;
+    }
+    
+    &.portrait {
+        grid-row-end: span 5;
+    }
+    
+    &.square {
+        grid-row-end: span 4;
+    }
+    
+}
+
+.madeby-grid__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+</style>
