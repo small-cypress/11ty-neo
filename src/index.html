@@ -61,7 +61,40 @@
                             <p>I'm a <a href="https://thedruidsgarden.com/2025/02/23/surviving-and-thriving-in-collapse-part-i/">collapse-aware</a> critter, but I see light coming through cracks and move towards that. How can I use the internet to help me see the light <i>and</i> the cracks, instead of learned helplessness? What would an internet that supports the nervous system look like? 
                                 <p>
                                     <p>
-                                        Click around and explore! My "about" page has links to other places you can find me (like are.na, the fediverse, and the 32-bit Cafe). 
+                                     <div class="photopile">
+  <button popovertarget="photo1">
+    <figure>
+      <img src="/" alt="">
+      <figcaption>caption 1</figcaption>
+    </figure>
+  </button>
+  <button popovertarget="photo2">
+    <figure>
+      <img src="" alt="">
+      <figcaption>caption 2</figcaption>
+    </figure>
+  </button>
+  <button popovertarget="photo3">
+    <figure>
+      <img src="" alt="">
+      <figcaption>caption 3</figcaption>
+    </figure>
+  </button>
+</div>
+<div class="popovers">
+  <figure popover id="photo1">
+    <img src="/" alt="">
+    <figcaption>big caption 1</figcaption>
+  </figure>
+  <figure popover id="photo2">
+    <img src="/" alt="">
+    <figcaption>big caption 2</figcaption>
+  </figure>
+  <figure popover id="photo3">
+    <img src="/" alt="">
+    <figcaption>big caption 3</figcaption>
+  </figure>
+</div>
 
                                         <p>
 
@@ -277,6 +310,79 @@ h2 {
                 padding: 20px;
                 order: 2;
             }
+           .photopile { 
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.photopile figure { 
+  display: inline-block;
+  background: white;
+  box-shadow: 1px 4px 5px rgba(0,0,0,0.55);
+  transform: rotate(2deg);
+  margin: 0 -25px;
+}
+.photopile figure img {
+  max-width: calc(100% - 2rem);
+  margin: 1rem 1rem 0 1rem;
+  border: 2px rgb(0,0,0,0.55) inset;
+}
+.photopile figcaption, .popovers figcaption {
+  font-family: /* set this to have it match the rest of the page */;
+  text-align: center;
+  margin: 0.5rem 1rem 1rem 1rem;
+  font-size: 1rem;
+  color: black;
+}
+.photopile button { 
+  background: none; 
+  border: none;
+  max-width: 40%;
+}
+.photopile button:hover, .photopile button:focus { 
+  z-index: 3;
+  cursor:pointer;
+}
+.photopile button:nth-child(2n) { 
+  transform: rotate(-10deg);
+}
+.photopile button:nth-child(3n) {
+  transform: rotate(5deg);
+}
+.photopile button:nth-child(4n) { 
+  transform: rotate(4deg);
+}
+.photopile button:nth-child(5n) { 
+  transform: rotate(-2deg);
+}
+.photopile button:nth-child(6n) {
+  transform: rotate(-7deg);
+}
+:popover-open {
+  border: none;
+  box-shadow: 1px 4px 5px rgba(0,0,0,0.55);
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+}
+.popovers figure:popover-open {
+  display: block;
+  background: white;
+  width: 88vmin;
+}
+.popovers figure:popover-open figcaption {
+  margin: 2.5vmin 1rem 4vmin 1rem;
+  font-size: 175%;
+  color: black;
+}
+.popovers figure:popover-open img {
+  margin: 4vmin 4vmin 0 4vmin;
+  width: 80vmin;
+  border: 4px rgb(0,0,0,0.55) inset;
+}
 
             /* what's this "order" stuff about??
     allow me to explain!
