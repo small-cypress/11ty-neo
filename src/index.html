@@ -32,16 +32,32 @@
                   <p><a href="https://smallcypress.neocities.org/collapse/">collapse</a></h2>
 
                     <div class="box">
-                        <p>as of 9.02</p>
+                        <p>as of 9.05</p>
                         <ul style="padding-left:10px;">
-                            <li>made the Baltimore link live finally!</a>!</li>
-                            <li>Added the formstone documentary to that page. Yay first masonry setup!</li>
+                            <li>added/adapted this photo pile code snippet from ribo.zone
+                            <li>updated credits toggle for this page using details/summary HTML
+                            <li>added two new 88x31 buttons, one from a favorite 32-bit cafe poster and another for a site I just stumbled upon on status.cafe
+                            <li>made the Baltimore link live finally</a>!</li>
+                            
                     
                         </ul>
                     </div><p><p>
             <center><img src="https://smallcypress.neocities.org/images/smallcypress.png"><p><textarea style="width:150px;height:52px;line-break:anywhere;">
 <a href="https://smallcypress.neocities.org"><img src="https://smallcypress.neocities.org/images/smallcypress.png" alt="small cypress"></a></textarea>
-                </aside>
+                
+
+                <details>
+            <summary><h3>credits</h3>:
+            </summary>
+            <article>
+            <h3>corydoras catfish gifs</h3>:
+            <p>I did not create these and I have never been able to find the original creator. They've been floating around in aquarium forums for at least a decade. I'd love to find the artist!
+                <p><h3>photo pile</h3>:
+                    <p>This is a code snippet from <a href="https://ribo.zone/free/snippets/">ribo.zone!</a> 
+                        <p><h3>layout</h3>:
+                            <p>This layout was originally built from <a href="https://codepen.io/sadness97/full/XJbLxNj">sadness' layout generator</a>. It's the first thing I played around with after almost 20 years off from html and css! 
+            </article>
+            </details></aside>
                 <main>
 <body>
 
@@ -107,7 +123,7 @@
                                                 <a href="https://maya.land/"><img src="https://smallcypress.neocities.org/images/banner.png" alt="maya.land"></a>
 
                                                     <a href="https://goblincat.neocities.org"><img src="https://smallcypress.neocities.org/images/goblincat.png" alt="goblincat"></a><a href="https://lostletters.neocities.org"><img src="https://smallcypress.neocities.org/images/lostletters.gif" alt="lost"></a>
-                                                    <a href="https://shellsharks.com"><img src="https://smallcypress.neocities.org/images/shellsharks-button.gif" alt="shellsharks"></a><a href="https://fatplatypus.great-site.net/"><img src="https://smallcypress.neocities.org/images/staticbuttontxtbook.png">
+                                                    <a href="https://shellsharks.com"><img src="https://smallcypress.neocities.org/images/shellsharks-button.gif" alt="shellsharks"></a><a href="https://fatplatypus.great-site.net/"><img src="https://smallcypress.neocities.org/images/staticbuttontxtbook.png"></a><a href="https://eatsteas.neocities.org/"><img src="https://smallcypress.neocities.org/images/eatsteasbutton2.gif"></a><a href="https://divergentrays.com/"><img arc="https://smallcypress.neocities.org/images/drbutton2.gif"></a>
 
 
                                         
@@ -180,6 +196,27 @@
                 font-style: italic;
                 font-weight: bold;
             }
+            details{
+    margin-top:2%;
+    width:40%;
+   position:relative;
+}
+
+
+summary, article{
+    background:
+    padding:1%;
+}
+
+summary{
+    border: 0px;
+}
+
+article{
+    position:relative;
+    margin-top:2%;
+    border: 0px;
+}
 
             body {
                 font-family: Verdana, sans-serif;
@@ -366,7 +403,8 @@ h2 {
   transform: rotate(-7deg);
 }
 :popover-open {
-  border: 1px;
+  border: 1px solid #000000;
+  background-color: #a6e6db;
   box-shadow: 1px 4px;
   position: fixed;
   top: 50vh;
@@ -375,7 +413,7 @@ h2 {
 }
 .popovers figure:popover-open {
   display: block;
-  background: white;
+  background: #a6e6db;
   width: 88vmin;
 }
 .popovers figure:popover-open figcaption {
